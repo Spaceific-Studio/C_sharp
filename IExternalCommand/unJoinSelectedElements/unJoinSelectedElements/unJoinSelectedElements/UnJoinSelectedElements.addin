@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command UnJoinSelectedElements</Text>
+    <Description>Some description for UnJoinSelectedElements</Description>
+    <Assembly>UnJoinSelectedElements.dll</Assembly>
+    <FullClassName>UnJoinSelectedElements.Command</FullClassName>
+    <ClientId>8615bb71-9f08-4f92-a5a7-361001258050</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

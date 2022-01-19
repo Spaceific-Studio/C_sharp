@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command GetParamsOfSelected</Text>
+    <Description>Some description for GetParamsOfSelected</Description>
+    <Assembly>GetParamsOfSelected.dll</Assembly>
+    <FullClassName>GetParamsOfSelected.Command</FullClassName>
+    <ClientId>d37dcd0a-a94b-47c1-87d1-4d46a2ceb993</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

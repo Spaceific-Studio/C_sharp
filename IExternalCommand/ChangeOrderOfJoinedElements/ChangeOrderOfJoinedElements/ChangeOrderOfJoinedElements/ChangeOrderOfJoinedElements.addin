@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command ChangeOrderOfJoinedElements</Text>
+    <Description>Some description for ChangeOrderOfJoinedElements</Description>
+    <Assembly>ChangeOrderOfJoinedElements.dll</Assembly>
+    <FullClassName>ChangeOrderOfJoinedElements.Command</FullClassName>
+    <ClientId>cccd4c77-72f5-48c2-9da7-a1c75975a6a4</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
