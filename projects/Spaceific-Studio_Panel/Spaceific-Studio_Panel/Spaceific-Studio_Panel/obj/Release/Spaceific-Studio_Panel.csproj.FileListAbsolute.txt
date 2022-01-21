@@ -1,0 +1,13 @@
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.AssemblyReference.cache
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.CoreCompileInputs.cache
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\changeOrderOfJoinedElements.png
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\joinAllElementsByPriority.png
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\spaceific_64x64_sat_X9M_icon.ico
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\OpeningsDimensions-32.png
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\unJoinSelectedElements.png
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\Spaceific-Studio_Panel.dll
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\Spaceific-Studio_Panel.pdb
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.dll
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.pdb
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\Spaceific-Studio_Panel.addin
+H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\getParamsOfSelected.png

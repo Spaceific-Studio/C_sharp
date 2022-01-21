@@ -1,0 +1,9 @@
+h:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\obj\Release\GetParamsOfSelected.csproj.AssemblyReference.cache
+h:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\obj\Release\GetParamsOfSelected.csproj.CoreCompileInputs.cache
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\bin\Release\LIB\spaceific_64x64_sat_X9M_icon.ico
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\bin\Release\GetParamsOfSelected.dll
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\bin\Release\GetParamsOfSelected.pdb
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\obj\Release\GetParamsOfSelected.dll
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\obj\Release\GetParamsOfSelected.pdb
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\bin\Release\LIB\getParamsOfSelected.png
+H:\_WORK\C#\IExternalCommand\GetParamsOfSelected\GetParamsOfSelected\GetParamsOfSelected\bin\Release\LIB\getParamsOfSelected.py

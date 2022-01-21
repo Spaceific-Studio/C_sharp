@@ -56,6 +56,10 @@ namespace ChangeOrderOfJoinedElements
 			py.Runtime.LoadAssembly(typeof(Autodesk.Revit.DB.Document).Assembly);
 			py.Runtime.LoadAssembly(typeof(Autodesk.Revit.UI.TaskDialog).Assembly);
 
+			string revitVersion = app.VersionNumber;
+			string user = Environment.UserName;          //get the currently logged user name
+			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\";  //User root folder
+
 			var scriptOutput = new ScriptOutput();
 			scriptOutput.Show();
 			var outputStream = new ScriptOutputStream(scriptOutput, py);
@@ -73,7 +77,7 @@ namespace ChangeOrderOfJoinedElements
 
 			try
 			{
-				py.ExecuteFile("changeOrderOfJoinedElements.py");
+				py.ExecuteFile(folderFullName + "changeOrderOfJoinedElements.py");
 			}
 			catch (Exception ex)
 			{

@@ -77,60 +77,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
-    <Compile Include="ChangeOrderOfJoinedElements.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="UnJoinSelectedElements.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="JoinAllElementsByPriority.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="IRpsConfig.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="OpeningsDimensions.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
+    <Compile Include="ChangeOrderOfJoinedElements.cs" />
+    <Compile Include="GetParamsOfSelected.cs" />
+    <Compile Include="UnJoinSelectedElements.cs" />
+    <Compile Include="JoinAllElementsByPriority.cs" />
+    <Compile Include="IRpsConfig.cs" />
+    <Compile Include="OpeningsDimensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScriptExecutor.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
+    <Compile Include="ScriptExecutor.cs" />
     <Compile Include="ScriptOutput.cs">
       <SubType>Form</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="ScriptOutput.Designer.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="ScriptOutputStream.cs">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
+    <Compile Include="ScriptOutput.Designer.cs" />
+    <Compile Include="ScriptOutputStream.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="changeOrderOfJoinedElements.png">
+    <Content Include="LIB\changeOrderOfJoinedElements.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="changeOrderOfJoinedElements.py">
+    <EmbeddedResource Include="LIB\getParamsOfSelected.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="joinAllElementsByPriority.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="joinAllElementsByPriority.py">
+    </EmbeddedResource>
+    <Content Include="LIB\joinAllElementsByPriority.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="LIB\spaceific_64x64_sat_X9M_icon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="OpeningsDimensions-32.png">
+    <Content Include="LIB\OpeningsDimensions-32.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Spaceific-Studio_Panel.addin" />
-    <Content Include="unJoinSelectedElements.png">
+    <Content Include="Spaceific-Studio_Panel.addin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="unJoinSelectedElements.py">
+    <Content Include="LIB\unJoinSelectedElements.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

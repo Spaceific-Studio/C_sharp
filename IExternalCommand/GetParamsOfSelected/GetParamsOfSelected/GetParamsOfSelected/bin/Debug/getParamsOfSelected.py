@@ -9,13 +9,18 @@ from Autodesk.Revit.DB.Architecture import *
 from Autodesk.Revit.UI import *
 from Autodesk.Revit.UI.Selection import *
 
+
+
 import sys
 from operator import attrgetter
+pyt_path = r'C:\Program Files (x86)\IronPython 2.7\Lib'
+sys.path.append(pyt_path)
+lib_path = r'H:\_WORK\PYTHON\REVIT_API\LIB'
+sys.path.append(lib_path)
 import os
 #if "Windows" in platform.uname():
 	#lib_path = r'H:/_WORK/PYTHON/LIB'
-lib_path = r'H:/_WORK/PYTHON/REVIT_API/LIB'
-sys.path.append(lib_path)
+
 
 from RevitSelection import getFamilyInstancesByName, getValuesByParameterName, setValuesByParameterName, filterElementsByActiveViewIds, getAllElements
 
@@ -26,6 +31,7 @@ from System.Collections.Generic import List as Clist
 #clr.AddReferenceByPartialName('PresentationCore')
 #clr.AddReferenceByPartialName('PresentationFramework')
 clr.AddReferenceByPartialName('System.Windows.Forms')
+clr.AddReferenceByPartialName('System.Drawing')
 #import System.Windows
 #import System.Drawing
 #from System.Reflection import BindingFlags

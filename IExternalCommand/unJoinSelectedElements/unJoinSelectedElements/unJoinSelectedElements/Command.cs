@@ -35,6 +35,10 @@ namespace UnJoinSelectedElements
 			scope.SetVariable("__commandData__", commandData);
 			string csharpInfo = "This script is running under csharp";
 
+			string revitVersion = app.VersionNumber;
+			string user = Environment.UserName;          //get the currently logged user name
+			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\";  //User root folder
+
 			// add special variable: __revit__ to be globally visible everywhere:
 			var builtin = IronPython.Hosting.Python.GetBuiltinModule(py);
 			builtin.SetVariable("__revit__", _revit);
@@ -44,7 +48,7 @@ namespace UnJoinSelectedElements
 
 			try
 			{
-				py.ExecuteFile("unJoinSelectedElements.py");
+				py.ExecuteFile(folderFullName + "unJoinSelectedElements.py");
 			}
 			catch (Exception ex)
 			{

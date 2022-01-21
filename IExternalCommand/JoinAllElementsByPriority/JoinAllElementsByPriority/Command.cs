@@ -55,7 +55,12 @@ namespace JoinAllElementsByPriority
 			builtin.SetVariable("__csharp__", csharpInfo);
 			py.Runtime.LoadAssembly(typeof(Autodesk.Revit.DB.Document).Assembly);
 			py.Runtime.LoadAssembly(typeof(Autodesk.Revit.UI.TaskDialog).Assembly);
-			
+
+			string revitVersion = app.VersionNumber;
+			string user = Environment.UserName;          //get the currently logged user name
+			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\";  //User root folder
+			builtin.SetVariable("__scriptDir__", folderFullName);
+
 			var scriptOutput = new ScriptOutput();
 			scriptOutput.Show();
 			var outputStream = new ScriptOutputStream(scriptOutput, py);
@@ -73,7 +78,8 @@ namespace JoinAllElementsByPriority
 
 			try
 			{
-				py.ExecuteFile("joinAllElementsByPriority.py");
+				py.ExecuteFile(folderFullName + @"LIB\" + "joinAllElementsByPriority.py");
+				//py.ExecuteFile("joinAllElementsByPriority.py");
 			}
 			catch (Exception ex)
 			{

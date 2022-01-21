@@ -1,3 +1,4 @@
+//#error version
 #region Namespaces
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
@@ -56,10 +57,26 @@ namespace GetParamsOfSelected
 			py.Runtime.LoadAssembly(typeof(Autodesk.Revit.DB.Document).Assembly);
 			py.Runtime.LoadAssembly(typeof(Autodesk.Revit.UI.TaskDialog).Assembly);
 
+			string revitVersion = app.VersionNumber;
+			string user = Environment.UserName;          //get the currently logged user name
+			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\";  //User root folder
+			
+			//DirectoryInfo TheFolder = new DirectoryInfo(folderFullName);
+			//Console.WriteLine("User folder:" + folderFullName);
+			//foreach (DirectoryInfo NextFolder in TheFolder.GetDirectories())
+			//	Console.WriteLine(NextFolder.Name);
+			//Console.ReadLine();
+			string myCWD = Directory.GetCurrentDirectory();
+
+			//TaskDialog dirDialog = new TaskDialog("Current user directory");
+			//dirDialog.MainInstruction = folderFullName;
+			//dirDialog.ExpandedContent = folderFullName;
+			//dirDialog.Show();
+
 			var scriptOutput = new ScriptOutput();
 			scriptOutput.Show();
 			var outputStream = new ScriptOutputStream(scriptOutput, py);
-			scriptOutput.Hide();
+			//scriptOutput.Hide();
 			py.Runtime.IO.SetOutput(outputStream, Encoding.UTF8);
 			py.Runtime.IO.SetErrorOutput(outputStream, Encoding.UTF8);
 			py.Runtime.IO.SetInput(outputStream, Encoding.UTF8);
@@ -73,14 +90,16 @@ namespace GetParamsOfSelected
 
 			try
 			{
-				py.ExecuteFile("getParamsOfSelected.py");
+				py.ExecuteFile(folderFullName + @"LIB\" + "getParamsOfSelected.py");
+				//py.ExecuteFile(folderFullName + "getParamsOfSelected.py");
 			}
 			catch (Exception ex)
 			{
 				TaskDialog myDialog = new TaskDialog("IronPython Error");
-				myDialog.MainInstruction = "Couldn't execute IronPython script totalSelectedVolume.py: ";
+				myDialog.MainInstruction = "Couldn't execute IronPython script getParamsOfSelected.py: ";
 				myDialog.ExpandedContent = ex.Message;
-				myDialog.EnableMarqueeProgressBar = true;
+				myDialog.MainContent = ex.Message;
+		
 				myDialog.Show();
 			}
 

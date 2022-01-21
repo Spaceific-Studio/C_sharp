@@ -1,0 +1,9 @@
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\bin\Release\JoinAllElementsByPriority.dll
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\bin\Release\JoinAllElementsByPriority.pdb
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\obj\Release\JoinAllElementsByPriority.csproj.AssemblyReference.cache
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\obj\Release\JoinAllElementsByPriority.csproj.CoreCompileInputs.cache
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\obj\Release\JoinAllElementsByPriority.dll
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\obj\Release\JoinAllElementsByPriority.pdb
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\bin\Release\LIB\spaceific_64x64_sat_X9M_icon.ico
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\bin\Release\LIB\joinAllElementsByPriority.py
+H:\_WORK\C#\IExternalCommand\JoinAllElementsByPriority\JoinAllElementsByPriority\bin\Release\LIB\joinAllElementsByPriority.png

@@ -95,10 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="JoinAllElementsByPriority.addin" />
-    <Content Include="joinAllElementsByPriority.png">
+    <Content Include="LIB\joinAllElementsByPriority.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="joinAllElementsByPriority.py">
+    <Content Include="LIB\joinAllElementsByPriority.py">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="LIB\spaceific_64x64_sat_X9M_icon.ico">

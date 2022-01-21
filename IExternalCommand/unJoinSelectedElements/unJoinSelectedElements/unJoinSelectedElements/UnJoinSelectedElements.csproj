@@ -42,24 +42,31 @@
   <ItemGroup>
     <Reference Include="IronPython">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\IronPython.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="IronPython.Modules">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\IronPython.Modules.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="IronPython.SQLite">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\DLLs\IronPython.SQLite.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="IronPython.Wpf">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\DLLs\IronPython.Wpf.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Dynamic">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\Microsoft.Dynamic.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Scripting">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\Microsoft.Scripting.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Scripting.Metadata">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\IronPython 2.7\Microsoft.Scripting.Metadata.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="RevitAPI">
       <HintPath>C:\Program Files\Autodesk\Revit 2020\RevitAPI.dll</HintPath>
