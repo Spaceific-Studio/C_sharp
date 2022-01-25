@@ -40,6 +40,9 @@
     <StartProgram>$(ProgramW6432)\Autodesk\Revit 2020\Revit.exe</StartProgram>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdWindows">
+      <HintPath>C:\Program Files\Autodesk\Revit 2020\AdWindows.dll</HintPath>
+    </Reference>
     <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\IronPython 2.7\IronPython.dll</HintPath>
@@ -74,10 +77,15 @@
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="UIFramework">
+      <HintPath>C:\Program Files\Autodesk\Revit 2020\UIFramework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="ChangeOrderOfJoinedElements.cs" />
+    <Compile Include="DefaultCode.cs" />
+    <Compile Include="UniversalPythonCommand.cs" />
     <Compile Include="GetParamsOfSelected.cs" />
     <Compile Include="UnJoinSelectedElements.cs" />
     <Compile Include="JoinAllElementsByPriority.cs" />

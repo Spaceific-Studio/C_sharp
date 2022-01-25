@@ -1,0 +1,16 @@
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\DirectoryReadConsoleApp.exe
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\DirectoryReadConsoleApp.deps.json
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\DirectoryReadConsoleApp.runtimeconfig.json
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\DirectoryReadConsoleApp.runtimeconfig.dev.json
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\DirectoryReadConsoleApp.dll
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\ref\DirectoryReadConsoleApp.dll
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\bin\Debug\net5.0\DirectoryReadConsoleApp.pdb
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.csproj.AssemblyReference.cache
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.AssemblyInfoInputs.cache
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.AssemblyInfo.cs
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.csproj.CoreCompileInputs.cache
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.dll
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\ref\DirectoryReadConsoleApp.dll
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.pdb
+H:\_WORK\C#\projects\Directories\DirectoryReadConsoleApp\DirectoryReadConsoleApp\DirectoryReadConsoleApp\obj\Debug\net5.0\DirectoryReadConsoleApp.genruntimeconfig.cache

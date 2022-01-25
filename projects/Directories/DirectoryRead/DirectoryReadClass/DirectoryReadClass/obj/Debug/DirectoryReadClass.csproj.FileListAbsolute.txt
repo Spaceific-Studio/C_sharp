@@ -1,0 +1,5 @@
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryReadClass\DirectoryReadClass\bin\Debug\DirectoryReadClass.dll
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryReadClass\DirectoryReadClass\bin\Debug\DirectoryReadClass.pdb
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryReadClass\DirectoryReadClass\obj\Debug\DirectoryReadClass.csproj.CoreCompileInputs.cache
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryReadClass\DirectoryReadClass\obj\Debug\DirectoryReadClass.dll
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryReadClass\DirectoryReadClass\obj\Debug\DirectoryReadClass.pdb

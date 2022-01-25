@@ -1,0 +1,7 @@
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\obj\Debug\DirectoryRead.csproj.AssemblyReference.cache
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\obj\Debug\DirectoryRead.csproj.CoreCompileInputs.cache
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\bin\Debug\DirectoryRead.exe.config
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\bin\Debug\DirectoryRead.exe
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\bin\Debug\DirectoryRead.pdb
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\obj\Debug\DirectoryRead.exe
+H:\_WORK\C#\projects\Directories\DirectoryRead\DirectoryRead\obj\Debug\DirectoryRead.pdb
