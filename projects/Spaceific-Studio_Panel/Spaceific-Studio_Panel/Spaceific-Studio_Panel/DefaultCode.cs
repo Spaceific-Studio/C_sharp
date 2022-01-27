@@ -17,7 +17,7 @@ namespace Spaceific_Studio_Panel
 		public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
 		{
 
-			return Execute(commandData.Application);
+			return Result.Succeeded;
 
 
 		}

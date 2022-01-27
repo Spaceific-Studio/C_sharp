@@ -26,14 +26,23 @@ namespace Spaceific_Studio_Panel
 		System.Collections.ArrayList panelNames = new System.Collections.ArrayList();
 		System.Collections.ArrayList panelContentNames = new System.Collections.ArrayList();
 		System.Collections.ArrayList ribbonPanels = new System.Collections.ArrayList();
-		string tabName = "";
+		Dictionary<string, string[]> buttonData = new Dictionary<string, string[]>();
+		string tabName = "Spaceific-Studio";
 		string defaultIconPath = "";
+		ExternalEventHandler exEvHandler = new ExternalEventHandler();
+		ExternalEvent commandEvent;
+		Dictionary<string, string[]> commandInfo = new Dictionary<string, string[]>();
+
+
 
 		public Result OnStartup(UIControlledApplication a)
 		{
+
+			commandInfo.Add("joinAllElementsByPriority.py", new string[] { "Join \nAll", "Joins all selected element by priority table. Must be selected elements before command is run." });
+			
 			adWin.ComponentManager.UIElementActivated += new EventHandler<Autodesk.Windows.UIElementActivatedEventArgs>(ComponentManager_UIElementActivated);
 			a.ControlledApplication.ApplicationInitialized += ControlledApplication_ApplicationInitialized;
-
+			commandEvent = ExternalEvent.Create(exEvHandler);
 			scriptRootDirs = ReadScriptRootDirs(a);
 
 			//AddRibbon(a);
@@ -52,7 +61,7 @@ namespace Spaceific_Studio_Panel
 			//var propertyName = "CurrentDirectory";
 			var propertyName = "Item";
 			var eType = e.GetType();
-			tabName = "Spaceific-Studio";
+			//tabName = "Spaceific-Studio";
 
 
 			try
@@ -71,39 +80,45 @@ namespace Spaceific_Studio_Panel
 						{
 							Console.WriteLine(String.Format("Object has property {0}", propertyName));
 							//var itemName = e.Item.Name;
-							TaskDialog myDialog = new TaskDialog("itemPressed");
-							myDialog.MainInstruction = String.Format("eType: {0}", eType.ToString());
-							myDialog.ExpandedContent = (String.Format("e.Item {0}\n" +
-								"										Name{1}\n" +
-								"										tag {2}\n" +
-								"										text {3}\n" +
-								"										UID {4}\n" +
-								"										Id {5}\n" +
-								"										groupName {6}\n" +
-								"										description {7}\n" +
-								"										AutomationName {8}\n" +
-								"										pbName {9}\n" +
-								"										panelGroup {10}\n" +
-								"										ribbonName {11}\n",
-														e.Item.ToString(),
-														e.Item.Name,
-														e.Item.Tag,
-														e.Item.Text,
-														e.Item.UID,
-														e.Item.Id,
-														e.Item.GroupName,
-														e.Item.Description,
-														e.Item.AutomationName,
-														pbName,
-														panelGroup,
-														ribbonName
-														));
-							myDialog.Show();
+							//TaskDialog myDialog = new TaskDialog("itemPressed");
+							//myDialog.MainInstruction = String.Format("eType: {0}", eType.ToString());
+							//myDialog.ExpandedContent = (String.Format("e.Item {0}\n" +
+							//	"										Name{1}\n" +
+							//	"										tag {2}\n" +
+							//	"										text {3}\n" +
+							//	"										UID {4}\n" +
+							//	"										Id {5}\n" +
+							//	"										groupName {6}\n" +
+							//	"										description {7}\n" +
+							//	"										AutomationName {8}\n" +
+							//	"										pbName {9}\n" +
+							//	"										panelGroup {10}\n" +
+							//	"										ribbonName {11}\n",
+							//							e.Item.ToString(),
+							//							e.Item.Name,
+							//							e.Item.Tag,
+							//							e.Item.Text,
+							//							e.Item.UID,
+							//							e.Item.Id,
+							//							e.Item.GroupName,
+							//							e.Item.Description,
+							//							e.Item.AutomationName,
+							//							pbName,
+							//							panelGroup,
+							//							ribbonName
+							//							));
 
-							var command = new UniversalPythonCommand();
-							command.SetCurrentPythonScritpt(pbName);
+							//myDialog.ExpandedContent = (String.Format("external event raised {0}", exEvHandler.GetName()));
+							//myDialog.Show();
+							//exEvHandler.SetCurrentPythonScritpt(buttonData[pbName][0]);
 							
-							command.Execute(uIApp);
+							exEvHandler.SetCurrentPythonScritpt(buttonData[pbName][0]);
+							commandEvent.Raise();
+							
+							//var command = new UniversalPythonCommand();
+							//command.SetCurrentPythonScritpt(buttonData[pbName][0]);
+
+							//command.Execute(uIApp);
 						}
 					}
 					
@@ -150,7 +165,7 @@ namespace Spaceific_Studio_Panel
 		public string[] ReadScriptRootDirs(UIControlledApplication application)
 		{
 			//string[] myDirs = new string[] { "Dir1", "Dir2"};
-			tabName = "Spaceific-Studio";
+			//tabName = "Spaceific-Studio";
 
 			string revitVersion = "";
 			try
@@ -291,10 +306,22 @@ namespace Spaceific_Studio_Panel
 													contentToPanel[1] = defaultIconPath;
 												}
 												pyFiles.Add(splittedFileName[splittedFileName.Length - 2], contentToPanel);
-
-												PushButtonData pbd = new PushButtonData(splittedFileName[splittedFileName.Length - 2], splittedFileName[splittedFileName.Length - 2], @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.DefaultCode");
+												buttonData.Add(splittedFileName[splittedFileName.Length - 2], contentToPanel);
+												string buttonText = "";
+												string longDescr = "";
+												if (commandInfo.ContainsKey(splittedFileName[splittedFileName.Length - 2]))
+												{
+													buttonText = commandInfo[splittedFileName[splittedFileName.Length - 2]][0];
+													longDescr = commandInfo[splittedFileName[splittedFileName.Length - 2]][1];
+												}
+												else
+												{
+													buttonText = splittedFileName[splittedFileName.Length - 2];
+													longDescr = "XXX";
+												}
+												PushButtonData pbd = new PushButtonData(splittedFileName[splittedFileName.Length - 2], buttonText, @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.DefaultCode");
 												PushButton pb = myRibbonPanel.AddItem(pbd) as PushButton;
-												pbd.LongDescription = "XXXXX";
+												pbd.LongDescription = longDescr;
 												BitmapImage imgPb = new BitmapImage(new Uri(contentToPanel[1]));
 												pb.LargeImage = imgPb;
 											}
