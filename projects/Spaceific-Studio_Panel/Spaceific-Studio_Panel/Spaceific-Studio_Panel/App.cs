@@ -25,13 +25,14 @@ namespace Spaceific_Studio_Panel
 		string[] spaceificStudioDirs = new string[] { };
 		System.Collections.ArrayList panelNames = new System.Collections.ArrayList();
 		System.Collections.ArrayList panelContentNames = new System.Collections.ArrayList();
-		System.Collections.ArrayList ribbonPanels = new System.Collections.ArrayList();
+		//System.Collections.ArrayList ribbonPanels = new System.Collections.ArrayList();
 		Dictionary<string, string[]> buttonData = new Dictionary<string, string[]>();
 		string tabName = "Spaceific-Studio";
 		string defaultIconPath = "";
 		ExternalEventHandler exEvHandler = new ExternalEventHandler();
 		ExternalEvent commandEvent;
 		Dictionary<string, string[]> commandInfo = new Dictionary<string, string[]>();
+		Dictionary<string, RibbonPanel> ribbonPanels = new Dictionary<string, RibbonPanel>();
 
 
 
@@ -44,6 +45,7 @@ namespace Spaceific_Studio_Panel
 			a.ControlledApplication.ApplicationInitialized += ControlledApplication_ApplicationInitialized;
 			commandEvent = ExternalEvent.Create(exEvHandler);
 			scriptRootDirs = ReadScriptRootDirs(a);
+			AddCsScripts(a);
 
 			//AddRibbon(a);
 			uIContrApp = a;
@@ -260,6 +262,7 @@ namespace Spaceific_Studio_Panel
 								//add Ribbon Pannel
 								//RibbonPanel myRibbonPanel = application.CreateRibbonPanel(String.Format("{0}", i), splittedDirName[splittedDirName.Length - 1]);
 								RibbonPanel myRibbonPanel = application.CreateRibbonPanel(tabName, splittedDirName[splittedDirName.Length - 1]);
+								ribbonPanels.Add(splittedDirName[splittedDirName.Length - 1], myRibbonPanel);
 								//System.Collections.ArrayList pyFiles = new System.Collections.ArrayList();
 								//System.Collections.ArrayList pyFileNames = new System.Collections.ArrayList();
 								Dictionary<string, string[]> pyFiles = new Dictionary<string, string[]>();
@@ -346,6 +349,23 @@ namespace Spaceific_Studio_Panel
 			return myDirs;
 		}
 
+		void AddCsScripts(UIControlledApplication application)
+		{
+			string revitVersion = application.ControlledApplication.VersionNumber;
+			string user = Environment.UserName;          //get the currently logged user name
+			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\" + tabName + @"\Annotate\";
+
+			PushButtonData pbd1 = new PushButtonData("pbd1", "Openings Dim", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.OpeningsDimensions");
+			if (ribbonPanels.ContainsKey("Annotate"))
+			{
+				RibbonPanel ribbonToAdd = ribbonPanels["Annotate"];
+				PushButton pb1 = ribbonToAdd.AddItem(pbd1) as PushButton;
+				pbd1.LongDescription = "Adds height of openings to annotation";
+				BitmapImage imgPb1 = new BitmapImage(new Uri(folderFullName + "OpeningsDimensions-32.png"));
+				pb1.LargeImage = imgPb1;
+			}
+			
+		}
 		static void AddRibbon(UIControlledApplication application)
 		{
 			application.CreateRibbonTab("Spaceific-Studio");
@@ -356,7 +376,8 @@ namespace Spaceific_Studio_Panel
 			string revitVersion = application.ControlledApplication.VersionNumber;
 			string user = Environment.UserName;          //get the currently logged user name
 			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\LIB\";  //User LIB folder
-																																 //Annotate buttons
+																																 
+			//Annotate buttons
 
 			PushButtonData pbd1 = new PushButtonData("pbd1", "Openings Dim", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.OpeningsDimensions");
 			PushButton pb1 = annotateRibbonPanel.AddItem(pbd1) as PushButton;

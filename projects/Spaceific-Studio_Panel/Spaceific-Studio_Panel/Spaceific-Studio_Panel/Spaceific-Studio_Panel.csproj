@@ -85,7 +85,7 @@
     <Compile Include="App.cs" />
     <Compile Include="ChangeOrderOfJoinedElements.cs" />
     <Compile Include="DefaultCode.cs" />
-    <Compile Include="UniversalPythonCommand.cs" />
+    <Compile Include="ExternalEventHandler.cs" />
     <Compile Include="GetParamsOfSelected.cs" />
     <Compile Include="UnJoinSelectedElements.cs" />
     <Compile Include="JoinAllElementsByPriority.cs" />
