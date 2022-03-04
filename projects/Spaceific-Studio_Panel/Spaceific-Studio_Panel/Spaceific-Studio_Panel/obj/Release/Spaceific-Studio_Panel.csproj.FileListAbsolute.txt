@@ -28,3 +28,6 @@ H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Stu
 H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\zh-CN\AdWindows.resources.dll
 H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\zh-TW\AdWindows.resources.dll
 H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.CopyComplete
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.AssemblyReference.cache
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.CoreCompileInputs.cache
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.dll
