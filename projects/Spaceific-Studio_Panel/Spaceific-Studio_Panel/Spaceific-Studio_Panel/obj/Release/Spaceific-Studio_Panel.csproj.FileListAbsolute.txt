@@ -28,3 +28,17 @@ H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Stu
 H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\zh-CN\AdWindows.resources.dll
 H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\zh-TW\AdWindows.resources.dll
 H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.CopyComplete
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\changeOrderOfJoinedElements.png
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\joinAllElementsByPriority.png
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\spaceific_64x64_sat_X9M_icon.ico
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\OpeningsDimensions-32.png
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\Spaceific-Studio_Panel.addin
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\unJoinSelectedElements.png
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\LIB\getParamsOfSelected.png
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\Spaceific-Studio_Panel.dll
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Release\Spaceific-Studio_Panel.pdb
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.AssemblyReference.cache
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.CoreCompileInputs.cache
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.csproj.CopyComplete
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.dll
+C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\obj\Release\Spaceific-Studio_Panel.pdb

@@ -29,7 +29,7 @@ namespace Spaceific_Studio_Panel
 		Dictionary<string, string[]> buttonData = new Dictionary<string, string[]>();
 		string tabName = "Spaceific-Studio";
 		string defaultIconPath = "";
-		ExternalEventHandler exEvHandler = new ExternalEventHandler();
+        readonly ExternalEventHandler exEvHandler = new ExternalEventHandler();
 		ExternalEvent commandEvent;
 		Dictionary<string, string[]> commandInfo = new Dictionary<string, string[]>();
 		Dictionary<string, RibbonPanel> ribbonPanels = new Dictionary<string, RibbonPanel>();
@@ -179,7 +179,7 @@ namespace Spaceific_Studio_Panel
 			}
 			catch
 			{
-				revitVersion = "2020";
+				revitVersion = "2022";
 				//TaskDialog myDialogRvE = new TaskDialog("RevitVersion setup manually");
 				//myDialogRvE.MainInstruction = String.Format("{0}", revitVersion);
 				//myDialogRvE.Show();				
@@ -322,7 +322,7 @@ namespace Spaceific_Studio_Panel
 													buttonText = splittedFileName[splittedFileName.Length - 2];
 													longDescr = "XXX";
 												}
-												PushButtonData pbd = new PushButtonData(splittedFileName[splittedFileName.Length - 2], buttonText, @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.DefaultCode");
+												PushButtonData pbd = new PushButtonData(splittedFileName[splittedFileName.Length - 2], buttonText, @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.DefaultCode");
 												PushButton pb = myRibbonPanel.AddItem(pbd) as PushButton;
 												pbd.LongDescription = longDescr;
 												BitmapImage imgPb = new BitmapImage(new Uri(contentToPanel[1]));
@@ -355,7 +355,7 @@ namespace Spaceific_Studio_Panel
 			string user = Environment.UserName;          //get the currently logged user name
 			string folderFullName = @"C:\users\" + user + @"\AppData\Roaming\Autodesk\Revit\Addins\" + revitVersion + @"\" + tabName + @"\Annotate\";
 
-			PushButtonData pbd1 = new PushButtonData("pbd1", "Openings Dim", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.OpeningsDimensions");
+			PushButtonData pbd1 = new PushButtonData("pbd1", "Openings Dim", @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.OpeningsDimensions");
 			if (ribbonPanels.ContainsKey("Annotate"))
 			{
 				RibbonPanel ribbonToAdd = ribbonPanels["Annotate"];
@@ -379,7 +379,7 @@ namespace Spaceific_Studio_Panel
 																																 
 			//Annotate buttons
 
-			PushButtonData pbd1 = new PushButtonData("pbd1", "Openings Dim", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.OpeningsDimensions");
+			PushButtonData pbd1 = new PushButtonData("pbd1", "Openings Dim", @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.OpeningsDimensions");
 			PushButton pb1 = annotateRibbonPanel.AddItem(pbd1) as PushButton;
 			pbd1.LongDescription = "Adds height of openings to annotation";
 			BitmapImage imgPb1 = new BitmapImage(new Uri(folderFullName + "OpeningsDimensions-32.png"));
@@ -387,25 +387,25 @@ namespace Spaceific_Studio_Panel
 
 			//Geometry buttons
 
-			PushButtonData pbd2 = new PushButtonData("pbd2", "Join \nAll", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.JoinAllElementsByPriority");
+			PushButtonData pbd2 = new PushButtonData("pbd2", "Join \nAll", @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.JoinAllElementsByPriority");
 			PushButton pb2 = geometryRibbonPanel.AddItem(pbd2) as PushButton;
 			pbd2.LongDescription = "Joins all selected element by priority table. Must be selected elements before command is run.";
 			BitmapImage imgPb2 = new BitmapImage(new Uri(folderFullName + "joinAllElementsByPriority.png"));
 			pb2.LargeImage = imgPb2;
 
-			PushButtonData pbd3 = new PushButtonData("pbd3", "Unjoin \nSelected", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.UnJoinSelectedElements");
+			PushButtonData pbd3 = new PushButtonData("pbd3", "Unjoin \nSelected", @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.UnJoinSelectedElements");
 			PushButton pb3 = geometryRibbonPanel.AddItem(pbd3) as PushButton;
 			pbd3.LongDescription = "Unjoin selected elements";
 			BitmapImage imgPb3 = new BitmapImage(new Uri(folderFullName + "unJoinSelectedElements.png"));
 			pb3.LargeImage = imgPb3;
 
-			PushButtonData pbd4 = new PushButtonData("pbd4", "Change \nOrder", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.ChangeOrderOfJoinedElements");
+			PushButtonData pbd4 = new PushButtonData("pbd4", "Change \nOrder", @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.ChangeOrderOfJoinedElements");
 			PushButton pb4 = geometryRibbonPanel.AddItem(pbd4) as PushButton;
 			pbd4.LongDescription = "Changes order of selected joined elements.";
 			BitmapImage imgPb4 = new BitmapImage(new Uri(folderFullName + "changeOrderOfJoinedElements.png"));
 			pb4.LargeImage = imgPb4;
 
-			PushButtonData pbd5 = new PushButtonData("pbd5", "Get All \nParameters", @"H:\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.GetParamsOfSelected");
+			PushButtonData pbd5 = new PushButtonData("pbd5", "Get All \nParameters", @"C:\DANO\_WORK\C#\projects\Spaceific-Studio_Panel\Spaceific-Studio_Panel\Spaceific-Studio_Panel\bin\Debug\Spaceific-Studio_Panel.dll", "Spaceific_Studio_Panel.GetParamsOfSelected");
 			pbd5.LongDescription = "Lists all availabe parameters.";
 			PushButton pb5 = paramRibbonPanel.AddItem(pbd5) as PushButton;
 			BitmapImage imgPb5 = new BitmapImage(new Uri(folderFullName + "getParamsOfSelected.png"));
