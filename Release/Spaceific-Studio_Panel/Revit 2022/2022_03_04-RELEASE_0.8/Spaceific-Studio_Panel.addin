@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application Spaceific-Studio_Panel</Name>
+    <Assembly>Spaceific-Studio_Panel.dll</Assembly>
+    <FullClassName>Spaceific_Studio_Panel.App</FullClassName>
+    <ClientId>3fa07f2c-caed-4a77-97fe-a6fbfc78610c</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

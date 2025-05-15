@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using Aspose.Cells.Charts;
+=======
+﻿//using Aspose.Cells.Charts;
+>>>>>>> 9f341bdb891965e20b7f5f573525098273b7faf5
 using Autodesk.Revit.ApplicationServices;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.DB;
@@ -39,14 +43,14 @@ namespace Spaceific_Studio_Panel
 							//DOOR ELEMENTS CONDITION
 							if (getElement.Category.Id.IntegerValue == (int)BuiltInCategory.OST_Doors)
 							{
-								d.Below = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), DisplayUnitType.DUT_MILLIMETERS).ToString();
+								d.Below = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), UnitTypeId.Millimeters).ToString();
 							}
 							//WINDOW ELEMENTS CONDITION
 							if (getElement.Category.Id.IntegerValue == (int)BuiltInCategory.OST_Windows)
 							{
-								double headHeight = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), DisplayUnitType.DUT_MILLIMETERS);
+								double headHeight = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), UnitTypeId.Millimeters);
 								string headHeightStr = headHeight.ToString();
-								double sillHeight = Math.Round(UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_SILL_HEIGHT_PARAM).AsDouble(), DisplayUnitType.DUT_MILLIMETERS), 0);
+								double sillHeight = Math.Round(UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_SILL_HEIGHT_PARAM).AsDouble(), UnitTypeId.Millimeters), 0);
 								double windowHeight = Math.Round(headHeight - sillHeight, 0);
 								sillHeight = Math.Round(sillHeight, 0);
 								string sillHeightStr = sillHeight.ToString();
@@ -66,14 +70,14 @@ namespace Spaceific_Studio_Panel
 							//DOOR ELEMENTS CONDITION
 							if (getElement.Category.Id.IntegerValue == (int)BuiltInCategory.OST_Doors)
 							{
-								ds.Below = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), DisplayUnitType.DUT_MILLIMETERS).ToString();
+								ds.Below = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), UnitTypeId.Millimeters).ToString();
 							}
 							//WINDOW ELEMENTS CONDITION
 							if (getElement.Category.Id.IntegerValue == (int)BuiltInCategory.OST_Windows)
 							{
-								double headHeight = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), DisplayUnitType.DUT_MILLIMETERS);
+								double headHeight = UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_HEAD_HEIGHT_PARAM).AsDouble(), UnitTypeId.Millimeters);
 								string headHeightStr = headHeight.ToString();
-								double sillHeight = Math.Round(UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_SILL_HEIGHT_PARAM).AsDouble(), DisplayUnitType.DUT_MILLIMETERS), 0);
+								double sillHeight = Math.Round(UnitUtils.ConvertFromInternalUnits(getElement.get_Parameter(BuiltInParameter.INSTANCE_SILL_HEIGHT_PARAM).AsDouble(), UnitTypeId.Millimeters), 0);
 								double windowHeight = Math.Round(headHeight - sillHeight, 0);
 								sillHeight = Math.Round(sillHeight, 0);
 								string sillHeightStr = sillHeight.ToString();

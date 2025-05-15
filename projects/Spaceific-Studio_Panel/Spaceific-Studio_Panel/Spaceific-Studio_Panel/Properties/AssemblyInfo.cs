@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Spaceific-Studio_Panel")]
 [assembly: AssemblyDescription("Revit Add-In Description for Spaceific-Studio_Panel")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Autodesk Inc.")]
+[assembly: AssemblyCompany("Spaceific-Studio")]
 [assembly: AssemblyProduct("Spaceific-Studio_Panel Revit C# .NET Add-In")]
-[assembly: AssemblyCopyright("Copyright 2020 (C) Jeremy Tammik, Autodesk Inc.")]
+[assembly: AssemblyCopyright("Copyright 2022 (C) Spaceific-Studio")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2020.0.0.0")]
-[assembly: AssemblyFileVersion("2020.0.0.0")]
+[assembly: AssemblyVersion("2022.0.0.0")]
+[assembly: AssemblyFileVersion("2022.0.0.0")]
